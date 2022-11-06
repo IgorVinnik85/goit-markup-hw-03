@@ -65,10 +65,10 @@ a {
 
 /* Header */
 
- .main-nav {
+.main-nav {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -339,7 +339,6 @@ a {
 
 /* стилізація сторінки портфоліо */
 
-
 .portfolio.list {
   display: flex;
   justify-content: center;
@@ -388,20 +387,24 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  background-color: tomato;
 }
 
+.portfolio-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-/* .cards {
+.cards {
   flex-basis: calc((100% - 60px) / 3);
-}  */
+}
 
 .title-sites {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-
 
 .portfolio-title {
   margin-top: 0;
