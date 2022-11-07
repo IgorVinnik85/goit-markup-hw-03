@@ -30,6 +30,9 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+}
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -65,13 +68,13 @@ a {
 
 /* Header */
 
-.main-nav {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header {
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--accent-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -101,6 +104,8 @@ a {
 }
 
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -158,7 +163,7 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  width: 696px;
+  max-width: 696px;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -169,15 +174,14 @@ a {
   background-color: var(--accent-text-color);
   border-radius: 4px;
   padding: 10px 32px;
+  border: none;
+  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   align-items: center;
-
   letter-spacing: 0.06em;
-
   color: var(--white-proect-color);
 }
 
@@ -193,7 +197,7 @@ a {
 }
 
 .elements {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -236,6 +240,11 @@ a {
 }
 
 /* <!-- чим ми займаємось --> */
+
+.work {
+  padding-top: 0;
+}
+
 .employment .list {
   display: flex;
 }
@@ -251,12 +260,25 @@ a {
 
 /* <!-- команда --> */
 
+.team-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-proect-color);
+}
+
+.team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .people .list {
   display: flex;
 }
 
 .workers {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 .workers:nth-child(4n) {
@@ -269,9 +291,6 @@ a {
   padding-bottom: 94px;
 }
 
-.team-photo {
-  margin-bottom: 30px;
-}
 
 .team-name {
   margin-top: 0;
@@ -302,7 +321,6 @@ a {
 .logo-footer {
   color: var(--white-proect-color);
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -334,7 +352,8 @@ a {
 .location.link {
   color: var(--white-proect-color);
   display: inline-block;
-  margin-bottom: 9px;
+  margin-top: 20px;
+  
 }
 
 /* стилізація сторінки портфоліо */
@@ -365,7 +384,7 @@ a {
 
 .second.button {
   display: inline-block;
-
+  padding: 6px 22px;
   color: var(--primary-text-color);
   font-family: inherit;
   font-weight: 500;
